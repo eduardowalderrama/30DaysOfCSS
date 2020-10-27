@@ -9,6 +9,8 @@ visando melhorar as habilidades de codificação.
  - Compartilhe o progresso no Github e LinkedIn com a hashtag #30daysOfCSS
  - O projeto deve ser concluído até 23:59
 
+---
+
 <h3 align="center"><strong>:heavy_check_mark: DESAFIO 1: AO PASSAR O MOUSE ALTERA O TEXTO NO BOTÃO</strong><h3/>
 
 <p align="center">
