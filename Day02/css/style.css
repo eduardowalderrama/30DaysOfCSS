@@ -1,0 +1,135 @@
+:root {
+  --facebook-color: #3b5999;
+  --instagran-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);  
+  --linkedIn-color: #0e76a8;
+  --twitter-color:  #00acee;
+  --whatsapp-color:  #25d366;
+  --youtube-color: #c4302b;  
+  --bg-color: #000;  
+
+  background-color: var(--bg-color);
+}
+
+.facebook {
+  width: 200px;
+  height: 200px;
+  background-color: var(--facebook-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}  
+
+.instagram {
+  width: 200px;
+  height: 200px;
+  background: var(--instagran-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+.linkedIn {
+  width: 200px;
+  height: 200px;
+  background-color: var(--linkedIn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+.twitter {
+  width: 200px;
+  height: 200px;
+  background-color: var(--twitter-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+.whatsapp {
+  width: 200px;
+  height: 200px;
+  background-color: var(--whatsapp-color);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+.youtube {
+  width: 200px;
+  height: 200px;
+  background-color: var(--youtube-color);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+}
+
+.wrap {
+  margin-top: 150px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+
+.cube div {
+  position: absolute;
+  opacity: 0.8;
+}
+
+.cube div:nth-child(1) {
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube div:nth-child(2) {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(3) {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube div:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube div:nth-child(5) {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes loop {
+  from{ transform: rotateX(0deg) rotateY(0deg);}
+  to{ transform: rotateX(360deg) rotateY(360deg);}
+}
+
+.cube {
+  animation: loop 10s linear infinite;
+}

@@ -11,8 +11,16 @@ visando melhorar as habilidades de codificação.
 
 ---
 
-<h3 align="center"><strong>:heavy_check_mark: DESAFIO 1: AO PASSAR O MOUSE ALTERA O TEXTO NO BOTÃO</strong><h3/>
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 1: AO PASSAR O MOUSE ALTERA O TEXTO NO BOTÃO</strong></h3>
 
 <p align="center">
   <img width= '600' src="gifs/Day01.gif">
+</p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 2: CUBO 3D COM ICONES DE REDES SOCIAIS </strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day02.gif">
 </p>
