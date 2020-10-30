@@ -38,5 +38,5 @@ visando melhorar as habilidades de codificação.
 <h3 align="center"><strong>:heavy_check_mark: DESAFIO 4: HEXAGONAL COM ICONES DE REDES SOCIAIS</strong></h3>
 
 <p align="center">
-  <img width= '600' src="gifs/Day03.gif">
+  <img width= '600' src="gifs/Day04.gif">
 </p>
