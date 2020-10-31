@@ -40,3 +40,11 @@ visando melhorar as habilidades de codificação.
 <p align="center">
   <img width= '600' src="gifs/Day04.gif">
 </p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 5: CARD ROTACIONAL COM ICONE </strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day05.gif">
+</p>
