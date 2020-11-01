@@ -1,0 +1,67 @@
+:root {
+  --bg-sandwich: #4169e1;
+  --bg-close: #ff0000;
+  --icon-color: #fff;
+  --bg-color: #000;
+
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-sandwich);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: var(--bg-close);
+}
+
+
+.icon {
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--icon-color);  
+  transition: 0.2s ease-in;
+}
+
+.icon::after, .icon::before {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;  
+  background-color: var(--icon-color);  
+  transition: 0.4s ease-in;
+}
+
+.icon::after {
+  top: 35px;
+}
+
+.icon::before {
+  top: -35px;
+}
+
+.container:hover .icon {
+  background: transparent;
+}
+
+.container:hover .icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.container:hover .icon::after {
+  top: 0;
+  transform: rotate(135deg);
+} 

@@ -48,3 +48,11 @@ visando melhorar as habilidades de codificação.
 <p align="center">
   <img width= '600' src="gifs/Day05.gif">
 </p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 6: AO PASSAR O MOUSE ALTERA O ÍCONE DE HAMBURGUER PARA O ICONE DE FECHAMENTO</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day06.gif">
+</p>
