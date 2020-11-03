@@ -1,0 +1,122 @@
+:root {
+  --facebook-color: #3b5999;
+  --instagran-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);  
+  --linkedIn-color: #0e76a8;
+  --twitter-color:  #00acee;
+  --youtube-color: #c4302b;  
+  --bg-color: #000;  
+  --color-icon: #fff;
+
+  background-color: var(--bg-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+}
+
+.facebook {
+  width: 100px;
+  height: 100px;
+  background-color: var(--facebook-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--color-icon);
+  border-radius: 50%;
+}  
+
+.instagram {
+  width: 100px;
+  height: 100px;
+  background: var(--instagran-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  color:var(--color-icon);
+  border-radius: 50%;
+}
+
+.linkedIn {
+  width: 100px;
+  height: 100px;
+  background-color: var(--linkedIn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--color-icon);
+  border-radius: 50%;
+}
+
+.twitter {
+  width: 100px;
+  height: 100px;
+  background-color: var(--twitter-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--color-icon);
+  border-radius: 50%;
+}
+
+.youtube {
+  width: 100px;
+  height: 100px;
+  background-color: var(--youtube-color);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--color-icon);
+  border-radius: 50%;
+}
+
+.rating {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  position: relative;
+  width: 0;
+  height: 128px;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  text-align: center;
+  opacity: 0;
+}
+
+.rating:hover label {
+  width: 160px;
+  opacity: 0.2;
+}
+
+.rating input:hover + label,
+.rating input:checked + label {
+  filter: grayscale(0);
+  opacity: 1;
+  width: 160px;
+}

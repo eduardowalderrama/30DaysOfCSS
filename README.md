@@ -60,7 +60,15 @@ visando melhorar as habilidades de codificação.
 --- 
 
 <h3 align="center"><strong>:heavy_check_mark: DESAFIO 7: CARDS ISOMÉTRICOS</strong></h3>
-
+  
 <p align="center">
   <img width= '600' src="gifs/Day07.gif">
+</p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 8: ESCOLHER O ICONE DE REDE SOCIAL</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day08.gif">
 </p>
