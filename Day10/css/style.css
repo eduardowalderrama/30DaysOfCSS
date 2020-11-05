@@ -1,0 +1,64 @@
+:root {
+  --bg-css: #3c99dc;
+  --bg-text: #fff;
+  --bg-html:  #f06529;
+  --bg-color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 394px;
+  cursor: pointer;
+}
+
+.icon-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-after {
+  width: 0;
+  transition: 2s;
+  overflow: hidden;
+  border-right: 2px solid #000;  
+}
+
+.container:hover .icon-after {
+  width: 100%;
+}
+
+.css {
+  width: 800px;
+  height: 394px;
+  background-color: var(--bg-css);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 200px;
+  color: var(--bg-text);
+}  
+
+
+.html {
+  width: 800px;
+  height: 394px;
+  background-color: var(--bg-html);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 200px;
+  color: var(--bg-text); 
+}
