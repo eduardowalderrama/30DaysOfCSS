@@ -88,3 +88,11 @@ visando melhorar as habilidades de codificação.
 <p align="center">
   <img width= '600' src="gifs/Day10.gif">
 </p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 11: EDIÇÃO DE TEXTO NO PAPEL</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day11.gif">
+</p>

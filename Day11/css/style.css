@@ -1,0 +1,49 @@
+:root {  
+  --bg-color: #000;
+  --paper-color: #fff;
+  --paper-before: #ff0000;
+  --line-color: #4682b4;
+}
+
+body {
+  margin: 0;
+  padding: 0;   
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.note-paper {
+  position: absolute;
+  margin: 50px 500px;
+  height: 550px;
+  width: 450px;
+  background-color: var(--paper-color);
+}
+
+.note-paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background-color: var(--paper-before);
+}
+
+.line-paper {
+  margin-top: 30px;
+  height: calc(100% - 30px);
+  width: 100%;
+  background-image: repeating-linear-gradient(var(--paper-color) 0px, var(--paper-color) 24px, var(--line-color) 25px);
+}
+
+.paper-text {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-size: 25px;
+  overflow: hidden;
+  outline: none;
+}
