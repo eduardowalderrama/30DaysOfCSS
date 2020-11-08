@@ -1,0 +1,92 @@
+:root {
+  --day-color: #add8e6;
+  --sun-down: #fafad2;
+  --sun-finish: #ff4500;
+  --sun-color: #ffa500;
+  --waves-color: #2d90af;
+  --night-color: #000;
+  --moon-color: #fff;
+}
+
+body {
+  background-color: var(--day-color);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  animation: sky 8s linear forwards;
+}
+
+@keyframes sky {
+  20% {
+    background-color: var(--day-color);
+  }
+  50% {
+    background-color: var(--sun-down);
+  }
+  70% {
+    background-color: var(--sun-finish);
+  }
+  100% {
+    background-color:var(--night-color);
+  }
+}
+
+.waves {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  height: 20px;
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle at 20px -5px,
+  transparent 22px, var(--waves-color) 18px);
+  background-repeat: repeat;
+}
+
+.waves:before {
+  position: absolute;
+  content: "";
+  background-color: var(--waves-color);
+  height: 100px;
+  width: 100%;
+  bottom: -100px; 
+}
+
+.sun {
+  background-color: var(--sun-color);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 320px;
+  z-index: -2;
+  animation: sunset 8s linear forwards;  
+}
+
+@keyframes sunset {
+  100% {
+    transform: translateY(480px);
+  }
+}
+
+.moon {
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: -20px 10px var(--moon-color);
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  opacity: 0;
+  animation: night 0.8s 7s forwards;
+}
+
+@keyframes night {
+  100% {
+    opacity: 1;
+  }
+}
