@@ -115,7 +115,7 @@ visando melhorar as habilidades de codificação.
 
 --- 
 
-<h3 align="center"><strong>:heavy_check_mark: DESAFIO 14: RADIAL ICON</strong></h3>
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 14: RADIAL COM ÍCONE</strong></h3>
 
 <p align="center">
   <img width= '600' src="gifs/Day14.gif">
