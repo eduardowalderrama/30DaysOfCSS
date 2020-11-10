@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #000;
+  --battery-border: #fff;
+  --ball1-color: #90ee90;
+  --ball2-color: #ffff00;
+  --ball3-color: #87cefa;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.ball1, .ball2, .ball3, .ball4 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--ball1-color);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.ball2 {
+  background-color: var(--ball2-color);
+}
+
+.ball3 {
+  background-color: var(--ball3-color);
+}
+
+.ball4 {
+  background-color: var(--battery-border);
+}
+
+.ball1 {
+  bottom: 45px;
+  left: 5px;
+  animation: ball-1 3s infinite;
+}
+
+@keyframes ball-1 {
+  25%,100% {
+    opacity: 1;
+  }
+}
+
+.ball2 {
+  bottom: 175px;
+  left: 85px;
+  animation: ball-2 3s infinite;
+}
+
+@keyframes ball-2 {
+  0%,25% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 1;
+  }
+}
+
+.ball3 {
+  bottom: 305px;
+  left: 165px;
+  animation: ball-3 3s infinite;
+}
+
+@keyframes ball-3 {
+  0%,50% {
+    opacity: 0;
+  }
+  75%,100% {
+    opacity: 1;
+  }
+}
+
+.ball4 {
+  bottom: 435px;
+  left: 245px;
+  animation: ball-4 3s infinite;
+}
+
+@keyframes ball-4 {
+  0%,75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+

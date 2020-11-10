@@ -121,3 +121,11 @@ visando melhorar as habilidades de codificação.
   <img width= '600' src="gifs/Day14.gif">
 </p>
 
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 15: SPINNER ANIMADO COM FORMAS REDONDAS</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day15.gif">
+</p>
+
