@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #000;
+  --no-signal: #fff;
+  --weak-signal: #ff0000;
+  --medium-signal: #ffd700;
+  --strong-signal: #008000;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+.circle {
+  background-color: var(--no-signal);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  animation: weak-signal 5s infinite;
+}
+
+@keyframes weak-signal {
+  19% {
+    background-color: var(--no-signal);
+  }
+  20% {
+    background-color: var(--no-signal);
+  }
+  100% {
+    background-color: var(--weak-signal);   
+  }
+}
+
+.wifi {
+  height: 150px;
+  width: 150px;
+  border: 50px solid transparent;
+  border-top: 50px solid var(--no-signal);
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  animation: weak-signal2 5s infinite;
+}
+
+@keyframes weak-signal2 {
+  39% {
+    border-top-color: var(--no-signal);
+  }
+  40% {
+    border-top-color: var(--no-signal);    
+  }
+  100% {
+    border-top-color: var(--weak-signal);        
+  }
+}
+
+.wifi:before {
+  position: absolute;
+  content: "";
+  height: 330px;
+  width: 330px;
+  border: 50px solid transparent;
+  border-top: 50px solid var(--no-signal);
+  border-radius: 50%;
+  right: -140px;
+  top: -150px;
+  animation: medium-signal 5s infinite;
+}
+
+@keyframes medium-signal {
+  59% {
+    border-top-color: var(--no-signal);    
+  }
+  60% {
+    border-top-color: var(--weak-signal);        
+  }
+  100% {
+    border-top-color: var(--medium-signal);        
+  }
+}
+
+.wifi::after {
+  position: absolute;
+  content: "";
+  height: 520px;
+  width: 520px;
+  border: 50px solid transparent;
+  border-top: 50px solid var(--no-signal);
+  border-radius: 50%;
+  right: -235px;
+  top: -250px;
+  animation: strong-signal 5s infinite;
+}
+
+@keyframes strong-signal {
+  79% {
+    border-top-color: var(--no-signal);    
+  }
+  80% {
+    border-top-color: var(--medium-signal);        
+  }
+  100% {
+    border-top-color: var(--strong-signal);        
+  } 
+}
