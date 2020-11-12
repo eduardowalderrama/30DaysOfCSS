@@ -1,0 +1,51 @@
+:root {
+  --bg-color: #000;
+  --text-color: #0000ff;
+  --title-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);  
+}
+
+h2 {
+  position: relative;
+  font-size: 14vh;
+  color: var(--title-color);
+  -webkit-text-stroke: 0.3vw var(--title-color);
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: var(--text-color);
+  -webkit-text-stroke: 0.1vw var(--text-color);
+  overflow: hidden;
+  animation: title-animation 6s linear infinite;
+}
+
+@keyframes title-animation
+{
+  0%,10%,100% {
+    width: 0;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
