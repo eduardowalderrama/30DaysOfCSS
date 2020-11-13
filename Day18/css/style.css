@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #000;
+  --border-color: #fff;
+  --icon-color: #000;
+  --wechat-color: #2dc100;
+  --telegram-color: #6cc1e3;
+  --whatsapp-color: #00e676;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:var(--bg-color);
+}
+
+#item {
+  display: none;
+}
+
+#item:checked ~ .menu {
+  width: 500px;
+  border-radius: 5px;
+  background-color: var(--border-color);
+  height: 85px;
+}
+
+#item:checked ~ .menu > ul {
+  display: block;
+  opacity: 1;
+}
+
+#item:checked ~ .menu > .mouse {
+  display: none;
+}
+
+.fa-mouse {
+  font-size: 50px;
+  color: var(--icon-color);
+  margin: -7px 2px auto;
+}
+
+.menu {
+  display: block;
+  margin: 250px auto;
+  width: 100px;
+  height: 100px;
+  background-color: var(--border-color);
+  border: 3px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+.menu div.mouse {
+  width: 40px;
+  margin: 35px auto;
+}
+
+.menu ul {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  list-style-type: none;
+  padding: 0;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li i {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 55px;
+  color: var(--icon-color);
+  font-size: 50px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.menu ul li:nth-child(1) i:hover {
+  background-color: var(--whatsapp-color);
+  color: var(--border-color);
+}
+.menu ul li:nth-child(2) i:hover {
+  background-color: var(--telegram-color);
+  color: var(--border-color);
+}
+.menu ul li:nth-child(3) i:hover {
+  background-color: var(--wechat-color);
+  color: var(--border-color);
+}
