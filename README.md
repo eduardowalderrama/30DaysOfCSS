@@ -153,3 +153,11 @@ visando melhorar as habilidades de codificação.
   <img width= '600' src="gifs/Day18.gif">
 </p>
 
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 19: LOADING COM ÍCONES DE REDES SOCIAIS</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day19.gif">
+</p>
+
