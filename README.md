@@ -163,9 +163,16 @@ visando melhorar as habilidades de codificação.
 
 --- 
 
-<h3 align="center"><strong>:heavy_check_mark: DESAFIO 19: CÓDIGO DE BARRAS</strong></h3>
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 20: CÓDIGO DE BARRAS</strong></h3>
 
 <p align="center">
   <img width= '600' src="gifs/Day20.gif">
 </p>
 
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 21: GRID LOADER</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day21.gif">
+</p>
