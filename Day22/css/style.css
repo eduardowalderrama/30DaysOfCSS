@@ -1,0 +1,129 @@
+:root {
+  --bg-color: #f8f8f8;
+  --polaroid-color: #202020;
+  --css-color: #3c99dc;
+  --lens-color: #505050;
+  --lens-border: #696969;
+  --lens-one:#303030;
+  --lens-two: #484848;
+  --take-photo: #505050;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 165px auto;
+}
+
+.polaroid-container {
+  z-index: 23;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.title {
+  font-size: 25px;
+  color: var(--bg-color);
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.polaroid-camera {
+  background-color: var(--polaroid-color);
+  width: 480px;
+  height: 288px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.polaroid-lens {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  background-color: var(--lens-color);
+  border: 5px solid var(--lens-border);
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.polaroid-lens-one {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: var(--lens-one);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroid-lens-two {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--lens-two);
+  border: 5px solid var(--lens-border);
+  position: relative;
+}
+
+.take-photo {
+  height: 20.8px;
+  width: 80px;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--take-photo);
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -20.8px;
+  left: 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.photo {
+  width: 240px;
+  height: 160px;   
+  position: absolute;
+  background-color: var(--bg-color);
+  border: 0.5px solid var(--polaroid-color);
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.css {
+  width: 210px;
+  height: 110px;
+  background-color: var(--css-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--bg-color);
+  font-size: 90px;
+}
+
+.btn-take-photo:checked + .photo {
+  bottom: -160px;
+}

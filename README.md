@@ -176,3 +176,11 @@ visando melhorar as habilidades de codificação.
 <p align="center">
   <img width= '600' src="gifs/Day21.gif">
 </p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 22: POLAROID CAMERA</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day22.gif">
+</p>
