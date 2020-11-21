@@ -5,7 +5,7 @@ Desafio criar 30 projetos simples utilizando as ferramentas tecnológicas HTML e
 visando melhorar as habilidades de codificação.
 
 ### :dart: Objetivos
- - Realizar um projeto por dia durante o periodo de 27/10/2020 a 25/11/2020
+ - Realizar um projeto por dia durante o periodo de 27/10/2020 a 27/11/2020
  - Compartilhe o progresso no Github e LinkedIn com a hashtag #30daysOfCSS
  - O projeto deve ser concluído até 23:59
 
@@ -191,4 +191,12 @@ visando melhorar as habilidades de codificação.
 
 <p align="center">
   <img width= '600' src="gifs/Day23.gif">
+</p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 24: PINTURA</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day24.gif">
 </p>
