@@ -208,3 +208,11 @@ visando melhorar as habilidades de codificação.
 <p align="center">
   <img width= '600' src="gifs/Day25.gif">
 </p>
+
+--- 
+
+<h3 align="center"><strong>:heavy_check_mark: DESAFIO 26: DARK WHITE TOGGLE</strong></h3>
+
+<p align="center">
+  <img width= '600' src="gifs/Day26.gif">
+</p>
