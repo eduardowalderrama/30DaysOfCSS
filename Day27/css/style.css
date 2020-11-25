@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #000;
+  --battery-top: #fff;
+  --level-one: #008000;
+  --level-two: #9acd32;
+  --level-three: #ffa500;
+  --level-four: #ff4500;
+  --level-five: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.battery-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.battery-top {
+  width: 50px;
+  height: 14px;
+  background-color: var(--battery-top);
+  margin: 0px auto 0px auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.battery {
+  width: 100px;
+  height: auto;
+  padding: 4px 8px;
+  border: 8px solid var(--battery-top);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.battery-level {
+  width: 100%;
+  height: 40px;
+  background-color: var(--battery-top);
+  margin: 4px 0px;
+}
+
+.battery-level:nth-child(5) {
+  background-color:var(--level-five);
+}
+
+.battery-level:nth-child(4) {
+  background-color: var(--level-four);
+}
+
+.battery-level:nth-child(3) {
+  background-color: var(--level-three);
+}
+
+.battery-level:nth-child(2) {
+  background-color: var(--level-two);
+}
+
+.battery-level:nth-child(1) {
+  background-color: var(--level-one);
+}
+
+.charge {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 24px);
+  left: 0px;
+  top: -35px;
+  background-color: var(--bg-color);
+  animation: changing 1s steps(6) infinite;
+}
+
+@keyframes changing {
+  100% {
+    height: 0%;
+  }
+} 
