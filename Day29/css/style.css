@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #000;
+  --bg-cell: #fff;
+  --cell-one: #ff0000;
+  --cell-two: #00ff;
+  --cell-three: #ffff00;
+  --cell-four: #008000;
+  --cell-five: #800080;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin: 200px auto;
+}
+
+.container {
+  display: flex;
+  perspective: 10px;
+  transform: perspective(300px) rotateX(20deg);
+}
+
+.container:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+}
+
+.container:hover > div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.container:hover .mouse {
+  opacity: 0;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: var(--bg-cell);
+  cursor: pointer;
+}
+
+.cell:nth-child(1):hover {
+  background-color: var(--cell-one);
+}
+
+.cell:nth-child(2):hover {
+  background-color: var(--cell-two);
+}
+.cell:nth-child(3):hover {
+  background-color: var(--cell-three);
+}
+.cell:nth-child(4):hover {
+  background-color: var(--cell-four);
+}
+.cell:nth-child(5):hover {
+  background-color: var(--cell-five);
+}
+
+.cell:nth-child(1) {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+}
+
+.cell:nth-child(2) {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+}
+
+.cell:nth-child(3) {
+  opacity: 1;
+}
+
+.cell:nth-child(4) {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+}
+
+.cell:nth-child(5) {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+}
+
+.mouse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  font-size: 60px;  
+} 
